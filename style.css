@@ -1,0 +1,274 @@
+* { box-sizing: border-box }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #e65540;
+}
+
+img {
+    max-width: 100%;
+}
+
+.text-strike {
+    text-decoration: line-through;
+}
+
+.sale {
+    color: #e65540;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.px-25 {
+    padding: 25px 0;
+}
+
+.small-margin {
+    margin: 7px 0;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row [class^=col-] {
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.no-gutters {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-1 {
+    flex-basis: calc(100% / 12);
+    max-width: calc(100% / 12);
+}
+
+.col-2 {
+    flex-basis: calc(100% * 2 / 12);
+    max-width: calc(100% * 2 / 12);
+}
+
+.col-3 {
+    flex-basis: calc(100% * 3 / 12);
+    max-width: calc(100% * 3 / 12);
+}
+
+.col-4 {
+    flex-basis: calc(100% * 4 / 12);
+    max-width: calc(100% * 4 / 12);
+}
+
+.col-5 {
+    flex-basis: calc(100% * 5 / 12);
+    max-width: calc(100% * 5 / 12);
+}
+
+.col-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.col-7 {
+    flex-basis: calc(100% * 7 / 12);
+    max-width: calc(100% * 7 / 12);
+}
+
+.col-8 {
+    flex-basis: calc(100% * 8 / 12);
+    max-width: calc(100% * 8 / 12);
+}
+
+.col-9 {
+    flex-basis: calc(100% * 9 / 12);
+    max-width: calc(100% * 9 / 12);
+}
+
+.col-10 {
+    flex-basis: calc(100% * 10 / 12);
+    max-width: calc(100% * 10 / 12);
+}
+
+.col-11 {
+    flex-basis: calc(100% * 11 / 12);
+    max-width: calc(100% * 11 / 12);
+}
+
+.col-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.offset-2 {
+    margin-left: calc(100% * 2 / 12);
+}
+
+.offset-3 {
+    margin-left: calc(100% * 3 / 12);
+}
+
+header{
+    height: 65px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    border-bottom: 2px solid #333;
+}
+
+header .logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    list-style-type: none;
+    padding: 0 10px
+}
+
+.promo {
+    height: calc(100vh - 65px);
+    background-image: url("images/master-woman.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.promo p {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.promo h1 {
+    font-size: 3rem;
+    margin: 15px 0;
+}
+
+.promo a {
+    color: #333;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.product h2 {
+    font-size: 2rem;
+}
+
+.zoom {
+    overflow: hidden;
+}
+
+.zoom img{
+    cursor: pointer;
+    transition: 500ms transform;
+}
+
+.zoom img:hover {
+    transform: scale(1.09);
+}
+
+.testimonial {
+    background-color: #f0f0f0;
+}
+
+.testimonial article {
+    width: 75%;
+    margin: auto;
+}
+
+.testimonial article img {
+    width: 25%;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.reassurance div {
+    text-align: center;
+    border-right: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.reassurance div:last-child {
+    border-right-style: none;
+}
+
+footer {
+    background-color: #F0F0F0;
+    padding: 25px;
+    color: #666;
+    font-size: 0.8rem;
+}
+
+footer > p {
+    margin: 30px 0 0;
+}
+
+footer .row h4 {
+    text-transform: uppercase;
+    color: #000;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+footer ul li a {
+    color: inherit;
+    display: block;
+}
